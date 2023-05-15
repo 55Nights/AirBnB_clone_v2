@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hello_world():
     """Returns A string hello world"""
-    return 'Hello, World!'
+    return 'Hello HBNB!'
 
 
 if __name__ == '__main__':
