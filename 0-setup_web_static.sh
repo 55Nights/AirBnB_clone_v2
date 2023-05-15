@@ -11,7 +11,13 @@ sudo mkdir -p /data/web_static/releases/test/
 sudo mkdir -p /data/web_static/shared/
 
 
-echo "Hello, world! Test HTML" | sudo tee /data/web_static/releases/test/index.html > /dev/null
+echo "<html>
+  <head>
+  </head>
+  <body>
+    Holberton School
+  </body>
+</html>" | sudo tee /data/web_static/releases/test/index.html > /dev/null
 
 
 
