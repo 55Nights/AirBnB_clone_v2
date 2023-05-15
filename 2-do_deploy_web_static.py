@@ -5,12 +5,13 @@ from fabric import Connection
 
 env.hosts = ['52.87.255.120', '100.26.220.215']
 
+env.user = 'ubuntu'
+env.key_filename = '~/.ssh/id_rsa'
 
 
 
 
-
-def do_deploy(archive_path):
+def deploy(archive_path):
     if not os.path.exists(archive_path):
         return False
 
